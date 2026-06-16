@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My App</title>
+    <title>Test Page</title>
 </head>
 <body>
-    <h1>Hello! My App is Working!</h1>
+    <h1>🚀 My App is Live!</h1>
+    <p>If you can see this page, GitHub Pages is working.</p>
+
+    <h2>Current Time:</h2>
+    <p id="time"></p>
+
+    <script>
+        setInterval(function() {
+            document.getElementById("time").innerHTML =
+                new Date().toLocaleTimeString();
+        }, 1000);
+    </script>
 </body>
 </html>
